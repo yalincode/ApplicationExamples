@@ -1,0 +1,10 @@
+D:\BilgeAdamDersler\BüyükUygulamaÖrnekleri\CoffeOrderingApp-wfa\CoffeOrderingApp-wfa\bin\Debug\CoffeOrderingApp-wfa.exe.config
+D:\BilgeAdamDersler\BüyükUygulamaÖrnekleri\CoffeOrderingApp-wfa\CoffeOrderingApp-wfa\bin\Debug\CoffeOrderingApp-wfa.exe
+D:\BilgeAdamDersler\BüyükUygulamaÖrnekleri\CoffeOrderingApp-wfa\CoffeOrderingApp-wfa\bin\Debug\CoffeOrderingApp-wfa.pdb
+D:\BilgeAdamDersler\BüyükUygulamaÖrnekleri\CoffeOrderingApp-wfa\CoffeOrderingApp-wfa\obj\Debug\CoffeOrderingApp-wfa.csproj.AssemblyReference.cache
+D:\BilgeAdamDersler\BüyükUygulamaÖrnekleri\CoffeOrderingApp-wfa\CoffeOrderingApp-wfa\obj\Debug\CoffeOrderingApp_wfa.Form1.resources
+D:\BilgeAdamDersler\BüyükUygulamaÖrnekleri\CoffeOrderingApp-wfa\CoffeOrderingApp-wfa\obj\Debug\CoffeOrderingApp_wfa.Properties.Resources.resources
+D:\BilgeAdamDersler\BüyükUygulamaÖrnekleri\CoffeOrderingApp-wfa\CoffeOrderingApp-wfa\obj\Debug\CoffeOrderingApp-wfa.csproj.GenerateResource.cache
+D:\BilgeAdamDersler\BüyükUygulamaÖrnekleri\CoffeOrderingApp-wfa\CoffeOrderingApp-wfa\obj\Debug\CoffeOrderingApp-wfa.csproj.CoreCompileInputs.cache
+D:\BilgeAdamDersler\BüyükUygulamaÖrnekleri\CoffeOrderingApp-wfa\CoffeOrderingApp-wfa\obj\Debug\CoffeOrderingApp-wfa.exe
+D:\BilgeAdamDersler\BüyükUygulamaÖrnekleri\CoffeOrderingApp-wfa\CoffeOrderingApp-wfa\obj\Debug\CoffeOrderingApp-wfa.pdb
