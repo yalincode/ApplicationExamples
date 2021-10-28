@@ -16,7 +16,6 @@ namespace CoffeOrderingApp_wfa
         {
             InitializeComponent();
         }
-
         
         string[] menu = new string[0];
         double[] price = new double[0];
@@ -35,24 +34,29 @@ namespace CoffeOrderingApp_wfa
             {
                 lstMenu.Items.Add($"{i + 1} - {menu[i]} - {price[i]} TL");
             }
-
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            
+            rbSmall.Checked = true;
         }
 
         private void btnEkleMunu_Click(object sender, EventArgs e)
         {
-            string coffee = txtMenuCoffee.Text;
-            double cofeePrice = Convert.ToDouble(txtMenuPrice.Text);
-            Array.Resize(ref menu, menu.Length + 1);
-            menu[menu.Length - 1] = coffee;
-            Array.Resize(ref price, price.Length + 1);
-            price[price.Length - 1] = cofeePrice;
-            lstMenu.Items.Add($"{menu.Length} - {menu[menu.Length-1]} - {price[price.Length-1]} TL");
-
+            try
+            {
+                string coffee = txtMenuCoffee.Text;
+                double cofeePrice = Convert.ToDouble(txtMenuPrice.Text);
+                Array.Resize(ref menu, menu.Length + 1);
+                menu[menu.Length - 1] = coffee;
+                Array.Resize(ref price, price.Length + 1);
+                price[price.Length - 1] = cofeePrice;
+                lstMenu.Items.Add($"{menu.Length} - {menu[menu.Length - 1]} - {price[price.Length - 1]} TL");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void btnSilMenu_Click(object sender, EventArgs e)
@@ -73,11 +77,9 @@ namespace CoffeOrderingApp_wfa
             }
             catch (Exception ex)
             {
-
                 MessageBox.Show(ex.Message);
             }  
         }
-
         
         double TotalNumber = 0;
         double[] TotalNumberArray =new double[0];
@@ -106,7 +108,6 @@ namespace CoffeOrderingApp_wfa
                 TotalNumberArray[TotalNumberArray.Length - 1] = number;
 
                 TotalNumber += TotalNumberArray[TotalNumberArray.Length - 1];
-
                 
                 listBox1.Items.Add($"{menu[coffeNumber - 1]} eklendi.");
                 listBox1.Items.Add($"Toplam Fiyat: {TotalNumber}");
@@ -115,15 +116,14 @@ namespace CoffeOrderingApp_wfa
                 totalOrder[totalOrder.Length - 1] = menu[coffeNumber - 1];
 
                 txtCoffeeChoice.Text = "";
+
+                txtName.Enabled = false;
             }
             catch (Exception ex)
             {
-
                 MessageBox.Show(ex.Message);
+                txtName.Enabled = true;
             }
-
-            txtName.Enabled = false;
-
         }
 
         
@@ -148,13 +148,10 @@ namespace CoffeOrderingApp_wfa
                 TotalNumber += 25;
             }
 
-            lblTotalPrice.Text = TotalNumber.ToString();
+            lblTotalPrice.Text = TotalNumber.ToString()+" TL";
             lstSiparisDurumEkrani.Items.Add($"{name} isimli kişinin siparişi hazırlanıyor.");
-
+            lstSiparisDurumEkrani.Items.Add("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -");
             timer1.Start();
-
-            
-
         }
 
         private void btnRenew_Click(object sender, EventArgs e)
@@ -176,8 +173,10 @@ namespace CoffeOrderingApp_wfa
             txtName.Text = "";
             lblTotalPrice.Text = "";
             txtName.Enabled = true;
+            label11.ForeColor = Color.Red;
+            lblSaniye.ForeColor = Color.Red;
+            label11.Text = "Sipariş Hazırlanmasına Kalan süre:";
         }
-
 
         int sec = 5;
         private void timer1_Tick(object sender, EventArgs e)
@@ -191,13 +190,35 @@ namespace CoffeOrderingApp_wfa
                 lstSiparisDurumEkrani.Cursor = Cursors.Default;
                 string name = txtName.Text;
                 lstSiparisDurumEkrani.Items.Add($"{name} isimli kişinin siparişi hazır!");
+                
                 foreach (var item in totalOrder)
                 {
                     lstSiparisDurumEkrani.Items.Add(item);
                 }
+                lstSiparisDurumEkrani.Items.Add("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -");
+                label11.Text = "Siparişiniz Hazır!";
+                label11.ForeColor = Color.Green;
+                lblSaniye.ForeColor= Color.Green;
                 sec += 5;
 
                 timer1.Stop();
+            }
+        }
+        private void btnRemove_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                listBox1.Items.RemoveAt(listBox1.Items.Count - 1);
+                listBox1.Items.RemoveAt(listBox1.Items.Count - 1);
+                TotalNumber -= TotalNumberArray[TotalNumberArray.Length - 1];
+                Array.Resize(ref TotalNumberArray, TotalNumberArray.Length - 1);
+                Array.Clear(totalOrder, totalOrder.Length - 1, 1);
+                Array.Resize(ref totalOrder, totalOrder.Length - 1);
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
             }
         }
     }

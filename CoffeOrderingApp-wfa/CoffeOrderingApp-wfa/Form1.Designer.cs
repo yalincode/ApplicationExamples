@@ -40,6 +40,8 @@ namespace CoffeOrderingApp_wfa
             this.label2 = new System.Windows.Forms.Label();
             this.lstMenu = new System.Windows.Forms.ListBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.listBox1 = new System.Windows.Forms.ListBox();
             this.lblTotalPrice = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.btnOrder = new System.Windows.Forms.Button();
@@ -61,10 +63,8 @@ namespace CoffeOrderingApp_wfa
             this.lstSiparisDurumEkrani = new System.Windows.Forms.ListBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.listBox1 = new System.Windows.Forms.ListBox();
             this.btnRenew = new System.Windows.Forms.Button();
             this.btnReady = new System.Windows.Forms.Button();
-            this.label9 = new System.Windows.Forms.Label();
             this.lblSaniye = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
@@ -95,7 +95,7 @@ namespace CoffeOrderingApp_wfa
             this.MenuYenileme.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.MenuYenileme.Location = new System.Drawing.Point(16, 50);
             this.MenuYenileme.Name = "MenuYenileme";
-            this.MenuYenileme.Size = new System.Drawing.Size(538, 152);
+            this.MenuYenileme.Size = new System.Drawing.Size(590, 164);
             this.MenuYenileme.TabIndex = 1;
             this.MenuYenileme.TabStop = false;
             this.MenuYenileme.Text = "Menü Yenileme (Yönetici)";
@@ -167,9 +167,9 @@ namespace CoffeOrderingApp_wfa
             this.lstMenu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(34)))), ((int)(((byte)(0)))));
             this.lstMenu.FormattingEnabled = true;
             this.lstMenu.ItemHeight = 20;
-            this.lstMenu.Location = new System.Drawing.Point(572, 70);
+            this.lstMenu.Location = new System.Drawing.Point(613, 70);
             this.lstMenu.Name = "lstMenu";
-            this.lstMenu.Size = new System.Drawing.Size(611, 264);
+            this.lstMenu.Size = new System.Drawing.Size(570, 264);
             this.lstMenu.TabIndex = 2;
             // 
             // groupBox1
@@ -198,30 +198,51 @@ namespace CoffeOrderingApp_wfa
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.groupBox1.Location = new System.Drawing.Point(16, 220);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(538, 586);
+            this.groupBox1.Size = new System.Drawing.Size(590, 586);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Sipariş Verme Ekranı";
             // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label9.ForeColor = System.Drawing.Color.Navy;
+            this.label9.Location = new System.Drawing.Point(252, 34);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(186, 24);
+            this.label9.TabIndex = 23;
+            this.label9.Text = "Kahve Sipariş Özet";
+            // 
+            // listBox1
+            // 
+            this.listBox1.BackColor = System.Drawing.Color.Wheat;
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.ItemHeight = 20;
+            this.listBox1.Location = new System.Drawing.Point(256, 61);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(328, 384);
+            this.listBox1.TabIndex = 22;
+            // 
             // lblTotalPrice
             // 
             this.lblTotalPrice.AutoSize = true;
-            this.lblTotalPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblTotalPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblTotalPrice.ForeColor = System.Drawing.Color.Navy;
-            this.lblTotalPrice.Location = new System.Drawing.Point(158, 535);
+            this.lblTotalPrice.Location = new System.Drawing.Point(208, 535);
             this.lblTotalPrice.Name = "lblTotalPrice";
-            this.lblTotalPrice.Size = new System.Drawing.Size(21, 24);
+            this.lblTotalPrice.Size = new System.Drawing.Size(30, 31);
             this.lblTotalPrice.TabIndex = 21;
             this.lblTotalPrice.Text = "0";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label7.ForeColor = System.Drawing.Color.Navy;
             this.label7.Location = new System.Drawing.Point(12, 535);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(140, 24);
+            this.label7.Size = new System.Drawing.Size(196, 31);
             this.label7.TabIndex = 20;
             this.label7.Text = "Toplam Tutar:";
             // 
@@ -300,6 +321,7 @@ namespace CoffeOrderingApp_wfa
             this.btnRemove.TabIndex = 12;
             this.btnRemove.Text = "-";
             this.btnRemove.UseVisualStyleBackColor = false;
+            this.btnRemove.Click += new System.EventHandler(this.btnRemove_Click);
             // 
             // btnAdd
             // 
@@ -401,9 +423,9 @@ namespace CoffeOrderingApp_wfa
             this.lstSiparisDurumEkrani.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(34)))), ((int)(((byte)(0)))));
             this.lstSiparisDurumEkrani.FormattingEnabled = true;
             this.lstSiparisDurumEkrani.ItemHeight = 20;
-            this.lstSiparisDurumEkrani.Location = new System.Drawing.Point(572, 380);
+            this.lstSiparisDurumEkrani.Location = new System.Drawing.Point(613, 380);
             this.lstSiparisDurumEkrani.Name = "lstSiparisDurumEkrani";
-            this.lstSiparisDurumEkrani.Size = new System.Drawing.Size(611, 424);
+            this.lstSiparisDurumEkrani.Size = new System.Drawing.Size(570, 424);
             this.lstSiparisDurumEkrani.TabIndex = 4;
             // 
             // label3
@@ -411,7 +433,7 @@ namespace CoffeOrderingApp_wfa
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label3.ForeColor = System.Drawing.Color.Blue;
-            this.label3.Location = new System.Drawing.Point(573, 50);
+            this.label3.Location = new System.Drawing.Point(612, 50);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(53, 20);
             this.label3.TabIndex = 5;
@@ -420,22 +442,13 @@ namespace CoffeOrderingApp_wfa
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label5.ForeColor = System.Drawing.Color.Blue;
-            this.label5.Location = new System.Drawing.Point(573, 357);
+            this.label5.Location = new System.Drawing.Point(612, 353);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(132, 20);
+            this.label5.Size = new System.Drawing.Size(153, 24);
             this.label5.TabIndex = 6;
             this.label5.Text = "Sipariş Durumu";
-            // 
-            // listBox1
-            // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 20;
-            this.listBox1.Location = new System.Drawing.Point(256, 61);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(276, 224);
-            this.listBox1.TabIndex = 22;
             // 
             // btnRenew
             // 
@@ -454,7 +467,7 @@ namespace CoffeOrderingApp_wfa
             // 
             this.btnReady.BackColor = System.Drawing.Color.Blue;
             this.btnReady.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnReady.Location = new System.Drawing.Point(632, 25);
+            this.btnReady.Location = new System.Drawing.Point(671, 25);
             this.btnReady.Name = "btnReady";
             this.btnReady.Size = new System.Drawing.Size(189, 39);
             this.btnReady.TabIndex = 21;
@@ -462,36 +475,25 @@ namespace CoffeOrderingApp_wfa
             this.btnReady.UseVisualStyleBackColor = false;
             this.btnReady.Click += new System.EventHandler(this.btnReady_Click);
             // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label9.ForeColor = System.Drawing.Color.Navy;
-            this.label9.Location = new System.Drawing.Point(252, 34);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(186, 24);
-            this.label9.TabIndex = 23;
-            this.label9.Text = "Kahve Sipariş Özet";
-            // 
             // lblSaniye
             // 
             this.lblSaniye.AutoSize = true;
-            this.lblSaniye.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblSaniye.ForeColor = System.Drawing.Color.Blue;
-            this.lblSaniye.Location = new System.Drawing.Point(1146, 357);
+            this.lblSaniye.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblSaniye.ForeColor = System.Drawing.Color.Red;
+            this.lblSaniye.Location = new System.Drawing.Point(1140, 353);
             this.lblSaniye.Name = "lblSaniye";
-            this.lblSaniye.Size = new System.Drawing.Size(37, 20);
+            this.lblSaniye.Size = new System.Drawing.Size(43, 24);
             this.lblSaniye.TabIndex = 22;
             this.lblSaniye.Text = "- - -";
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label11.ForeColor = System.Drawing.Color.Blue;
-            this.label11.Location = new System.Drawing.Point(864, 357);
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label11.ForeColor = System.Drawing.Color.Red;
+            this.label11.Location = new System.Drawing.Point(802, 353);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(287, 20);
+            this.label11.Size = new System.Drawing.Size(332, 24);
             this.label11.TabIndex = 23;
             this.label11.Text = "Sipariş Hazırlanmasına Kalan süre:";
             // 
