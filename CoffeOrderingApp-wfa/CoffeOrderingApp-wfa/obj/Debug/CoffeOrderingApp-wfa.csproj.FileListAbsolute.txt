@@ -18,3 +18,13 @@ D:\BilgeAdamDersler\ApplicationExamples\CoffeOrderingApp-wfa\CoffeOrderingApp-wf
 D:\BilgeAdamDersler\ApplicationExamples\CoffeOrderingApp-wfa\CoffeOrderingApp-wfa\obj\Debug\CoffeOrderingApp-wfa.csproj.CoreCompileInputs.cache
 D:\BilgeAdamDersler\ApplicationExamples\CoffeOrderingApp-wfa\CoffeOrderingApp-wfa\obj\Debug\CoffeOrderingApp-wfa.exe
 D:\BilgeAdamDersler\ApplicationExamples\CoffeOrderingApp-wfa\CoffeOrderingApp-wfa\obj\Debug\CoffeOrderingApp-wfa.pdb
+D:\BilgeAdamDersler\ApplicationEx\CoffeOrderingApp-wfa\CoffeOrderingApp-wfa\bin\Debug\CoffeOrderingApp-wfa.exe.config
+D:\BilgeAdamDersler\ApplicationEx\CoffeOrderingApp-wfa\CoffeOrderingApp-wfa\bin\Debug\CoffeOrderingApp-wfa.exe
+D:\BilgeAdamDersler\ApplicationEx\CoffeOrderingApp-wfa\CoffeOrderingApp-wfa\bin\Debug\CoffeOrderingApp-wfa.pdb
+D:\BilgeAdamDersler\ApplicationEx\CoffeOrderingApp-wfa\CoffeOrderingApp-wfa\obj\Debug\CoffeOrderingApp-wfa.csproj.AssemblyReference.cache
+D:\BilgeAdamDersler\ApplicationEx\CoffeOrderingApp-wfa\CoffeOrderingApp-wfa\obj\Debug\CoffeOrderingApp_wfa.Form1.resources
+D:\BilgeAdamDersler\ApplicationEx\CoffeOrderingApp-wfa\CoffeOrderingApp-wfa\obj\Debug\CoffeOrderingApp_wfa.Properties.Resources.resources
+D:\BilgeAdamDersler\ApplicationEx\CoffeOrderingApp-wfa\CoffeOrderingApp-wfa\obj\Debug\CoffeOrderingApp-wfa.csproj.GenerateResource.cache
+D:\BilgeAdamDersler\ApplicationEx\CoffeOrderingApp-wfa\CoffeOrderingApp-wfa\obj\Debug\CoffeOrderingApp-wfa.csproj.CoreCompileInputs.cache
+D:\BilgeAdamDersler\ApplicationEx\CoffeOrderingApp-wfa\CoffeOrderingApp-wfa\obj\Debug\CoffeOrderingApp-wfa.exe
+D:\BilgeAdamDersler\ApplicationEx\CoffeOrderingApp-wfa\CoffeOrderingApp-wfa\obj\Debug\CoffeOrderingApp-wfa.pdb

@@ -1,0 +1,13 @@
+D:\BilgeAdamDersler\ApplicationEx\WareHouseProject\WareHouseProject\bin\Debug\WareHouseProject.exe.config
+D:\BilgeAdamDersler\ApplicationEx\WareHouseProject\WareHouseProject\bin\Debug\WareHouseProject.exe
+D:\BilgeAdamDersler\ApplicationEx\WareHouseProject\WareHouseProject\bin\Debug\WareHouseProject.pdb
+D:\BilgeAdamDersler\ApplicationEx\WareHouseProject\WareHouseProject\obj\Debug\WareHouseProject.csproj.AssemblyReference.cache
+D:\BilgeAdamDersler\ApplicationEx\WareHouseProject\WareHouseProject\obj\Debug\WareHouseProject.LoginForm.resources
+D:\BilgeAdamDersler\ApplicationEx\WareHouseProject\WareHouseProject\obj\Debug\WareHouseProject.MainForm.resources
+D:\BilgeAdamDersler\ApplicationEx\WareHouseProject\WareHouseProject\obj\Debug\WareHouseProject.Properties.Resources.resources
+D:\BilgeAdamDersler\ApplicationEx\WareHouseProject\WareHouseProject\obj\Debug\WareHouseProject.csproj.GenerateResource.cache
+D:\BilgeAdamDersler\ApplicationEx\WareHouseProject\WareHouseProject\obj\Debug\WareHouseProject.csproj.CoreCompileInputs.cache
+D:\BilgeAdamDersler\ApplicationEx\WareHouseProject\WareHouseProject\obj\Debug\WareHouseProject.exe
+D:\BilgeAdamDersler\ApplicationEx\WareHouseProject\WareHouseProject\obj\Debug\WareHouseProject.pdb
+D:\BilgeAdamDersler\ApplicationEx\WareHouseProject\WareHouseProject\obj\Debug\WareHouseProject.WarehouseListForm.resources
+D:\BilgeAdamDersler\ApplicationEx\WareHouseProject\WareHouseProject\obj\Debug\WareHouseProject.WarehouseForm.resources
