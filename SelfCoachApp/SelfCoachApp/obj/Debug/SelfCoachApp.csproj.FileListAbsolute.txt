@@ -1,0 +1,11 @@
+D:\BilgeAdamDersler\ApplicationEx\SelfCoachApp\SelfCoachApp\bin\Debug\SelfCoachApp.exe.config
+D:\BilgeAdamDersler\ApplicationEx\SelfCoachApp\SelfCoachApp\bin\Debug\SelfCoachApp.exe
+D:\BilgeAdamDersler\ApplicationEx\SelfCoachApp\SelfCoachApp\bin\Debug\SelfCoachApp.pdb
+D:\BilgeAdamDersler\ApplicationEx\SelfCoachApp\SelfCoachApp\obj\Debug\SelfCoachApp.csproj.AssemblyReference.cache
+D:\BilgeAdamDersler\ApplicationEx\SelfCoachApp\SelfCoachApp\obj\Debug\SelfCoachApp.MainForm.resources
+D:\BilgeAdamDersler\ApplicationEx\SelfCoachApp\SelfCoachApp\obj\Debug\SelfCoachApp.Properties.Resources.resources
+D:\BilgeAdamDersler\ApplicationEx\SelfCoachApp\SelfCoachApp\obj\Debug\SelfCoachApp.TDEE.resources
+D:\BilgeAdamDersler\ApplicationEx\SelfCoachApp\SelfCoachApp\obj\Debug\SelfCoachApp.csproj.GenerateResource.cache
+D:\BilgeAdamDersler\ApplicationEx\SelfCoachApp\SelfCoachApp\obj\Debug\SelfCoachApp.csproj.CoreCompileInputs.cache
+D:\BilgeAdamDersler\ApplicationEx\SelfCoachApp\SelfCoachApp\obj\Debug\SelfCoachApp.exe
+D:\BilgeAdamDersler\ApplicationEx\SelfCoachApp\SelfCoachApp\obj\Debug\SelfCoachApp.pdb
