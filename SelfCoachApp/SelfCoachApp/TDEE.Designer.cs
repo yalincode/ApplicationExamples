@@ -30,6 +30,8 @@ namespace SelfCoachApp
         private void InitializeComponent()
         {
             this.gbTDEE = new System.Windows.Forms.GroupBox();
+            this.lblmacros = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.lblCaloriesPerWeek = new System.Windows.Forms.Label();
             this.lblCaloriesPerDay = new System.Windows.Forms.Label();
             this.rbMaintenance = new System.Windows.Forms.RadioButton();
@@ -59,14 +61,19 @@ namespace SelfCoachApp
             this.label13 = new System.Windows.Forms.Label();
             this.rbFamele = new System.Windows.Forms.RadioButton();
             this.rbMale = new System.Windows.Forms.RadioButton();
-            this.label2 = new System.Windows.Forms.Label();
-            this.lblmacros = new System.Windows.Forms.Label();
+            this.btnFast = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.lblOpinion = new System.Windows.Forms.Label();
+            this.btnMeal = new System.Windows.Forms.Button();
+            this.btnFitness = new System.Windows.Forms.Button();
             this.gbTDEE.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // gbTDEE
             // 
+            this.gbTDEE.Controls.Add(this.btnFitness);
+            this.gbTDEE.Controls.Add(this.btnMeal);
             this.gbTDEE.Controls.Add(this.lblmacros);
             this.gbTDEE.Controls.Add(this.label2);
             this.gbTDEE.Controls.Add(this.lblCaloriesPerWeek);
@@ -85,6 +92,26 @@ namespace SelfCoachApp
             this.gbTDEE.TabIndex = 2;
             this.gbTDEE.TabStop = false;
             this.gbTDEE.Text = "TDEE";
+            // 
+            // lblmacros
+            // 
+            this.lblmacros.AutoSize = true;
+            this.lblmacros.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblmacros.Location = new System.Drawing.Point(17, 326);
+            this.lblmacros.Name = "lblmacros";
+            this.lblmacros.Size = new System.Drawing.Size(15, 20);
+            this.lblmacros.TabIndex = 24;
+            this.lblmacros.Text = "-";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label2.Location = new System.Drawing.Point(17, 301);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(72, 20);
+            this.label2.TabIndex = 23;
+            this.label2.Text = "Macros:";
             // 
             // lblCaloriesPerWeek
             // 
@@ -107,6 +134,7 @@ namespace SelfCoachApp
             // rbMaintenance
             // 
             this.rbMaintenance.AutoSize = true;
+            this.rbMaintenance.Checked = true;
             this.rbMaintenance.Location = new System.Drawing.Point(262, 112);
             this.rbMaintenance.Name = "rbMaintenance";
             this.rbMaintenance.Size = new System.Drawing.Size(118, 21);
@@ -122,7 +150,6 @@ namespace SelfCoachApp
             this.rbLossWeight.Name = "rbLossWeight";
             this.rbLossWeight.Size = new System.Drawing.Size(115, 21);
             this.rbLossWeight.TabIndex = 19;
-            this.rbLossWeight.TabStop = true;
             this.rbLossWeight.Text = "Loss Weight";
             this.rbLossWeight.UseVisualStyleBackColor = true;
             // 
@@ -133,7 +160,6 @@ namespace SelfCoachApp
             this.rbGainWeight.Name = "rbGainWeight";
             this.rbGainWeight.Size = new System.Drawing.Size(115, 21);
             this.rbGainWeight.TabIndex = 18;
-            this.rbGainWeight.TabStop = true;
             this.rbGainWeight.Text = "Gain Weight";
             this.rbGainWeight.UseVisualStyleBackColor = true;
             // 
@@ -201,6 +227,8 @@ namespace SelfCoachApp
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.lblOpinion);
+            this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Controls.Add(this.lblCompare);
             this.groupBox2.Controls.Add(this.lblBodyFatFirs);
             this.groupBox2.Controls.Add(this.btnBodyFatCalculate);
@@ -228,7 +256,7 @@ namespace SelfCoachApp
             // lblCompare
             // 
             this.lblCompare.AutoSize = true;
-            this.lblCompare.Location = new System.Drawing.Point(75, 421);
+            this.lblCompare.Location = new System.Drawing.Point(119, 421);
             this.lblCompare.Name = "lblCompare";
             this.lblCompare.Size = new System.Drawing.Size(174, 17);
             this.lblCompare.TabIndex = 18;
@@ -237,7 +265,7 @@ namespace SelfCoachApp
             // lblBodyFatFirs
             // 
             this.lblBodyFatFirs.AutoSize = true;
-            this.lblBodyFatFirs.Location = new System.Drawing.Point(75, 391);
+            this.lblBodyFatFirs.Location = new System.Drawing.Point(98, 391);
             this.lblBodyFatFirs.Name = "lblBodyFatFirs";
             this.lblBodyFatFirs.Size = new System.Drawing.Size(116, 17);
             this.lblBodyFatFirs.TabIndex = 17;
@@ -359,11 +387,11 @@ namespace SelfCoachApp
             this.rbFamele.TabStop = true;
             this.rbFamele.Text = "Famele";
             this.rbFamele.UseVisualStyleBackColor = true;
-            this.rbFamele.CheckedChanged += new System.EventHandler(this.rbFamele_CheckedChanged);
             // 
             // rbMale
             // 
             this.rbMale.AutoSize = true;
+            this.rbMale.Checked = true;
             this.rbMale.Location = new System.Drawing.Point(14, 31);
             this.rbMale.Name = "rbMale";
             this.rbMale.Size = new System.Drawing.Size(60, 21);
@@ -371,33 +399,59 @@ namespace SelfCoachApp
             this.rbMale.TabStop = true;
             this.rbMale.Text = "Male";
             this.rbMale.UseVisualStyleBackColor = true;
-            this.rbMale.CheckedChanged += new System.EventHandler(this.rbMale_CheckedChanged);
             // 
-            // label2
+            // btnFast
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.Location = new System.Drawing.Point(17, 301);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(72, 20);
-            this.label2.TabIndex = 23;
-            this.label2.Text = "Macros:";
+            this.btnFast.Location = new System.Drawing.Point(274, 9);
+            this.btnFast.Name = "btnFast";
+            this.btnFast.Size = new System.Drawing.Size(67, 30);
+            this.btnFast.TabIndex = 17;
+            this.btnFast.Text = "Fast";
+            this.btnFast.UseVisualStyleBackColor = true;
+            this.btnFast.Click += new System.EventHandler(this.btnFast_Click);
             // 
-            // lblmacros
+            // label4
             // 
-            this.lblmacros.AutoSize = true;
-            this.lblmacros.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblmacros.Location = new System.Drawing.Point(17, 326);
-            this.lblmacros.Name = "lblmacros";
-            this.lblmacros.Size = new System.Drawing.Size(15, 20);
-            this.lblmacros.TabIndex = 24;
-            this.lblmacros.Text = "-";
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(41, 421);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(80, 17);
+            this.label4.TabIndex = 19;
+            this.label4.Text = "Fit Level: ";
+            // 
+            // lblOpinion
+            // 
+            this.lblOpinion.AutoSize = true;
+            this.lblOpinion.Location = new System.Drawing.Point(75, 448);
+            this.lblOpinion.Name = "lblOpinion";
+            this.lblOpinion.Size = new System.Drawing.Size(174, 17);
+            this.lblOpinion.TabIndex = 20;
+            this.lblOpinion.Text = "Compare with Standats";
+            // 
+            // btnMeal
+            // 
+            this.btnMeal.Location = new System.Drawing.Point(207, 421);
+            this.btnMeal.Name = "btnMeal";
+            this.btnMeal.Size = new System.Drawing.Size(176, 50);
+            this.btnMeal.TabIndex = 25;
+            this.btnMeal.Text = "Meal Plan";
+            this.btnMeal.UseVisualStyleBackColor = true;
+            // 
+            // btnFitness
+            // 
+            this.btnFitness.Location = new System.Drawing.Point(6, 421);
+            this.btnFitness.Name = "btnFitness";
+            this.btnFitness.Size = new System.Drawing.Size(178, 50);
+            this.btnFitness.TabIndex = 26;
+            this.btnFitness.Text = "Workout Program";
+            this.btnFitness.UseVisualStyleBackColor = true;
             // 
             // TDEE
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 568);
+            this.Controls.Add(this.btnFast);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label1);
@@ -450,5 +504,10 @@ namespace SelfCoachApp
         private System.Windows.Forms.Button btnCalculateCalorie;
         private System.Windows.Forms.Label lblmacros;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button btnFast;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lblOpinion;
+        private System.Windows.Forms.Button btnFitness;
+        private System.Windows.Forms.Button btnMeal;
     }
 }

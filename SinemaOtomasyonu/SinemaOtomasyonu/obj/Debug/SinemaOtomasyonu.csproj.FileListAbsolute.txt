@@ -1,0 +1,11 @@
+D:\BilgeAdamDersler\ApplicationEx\SinemaOtomasyonu\SinemaOtomasyonu\bin\Debug\SinemaOtomasyonu.exe.config
+D:\BilgeAdamDersler\ApplicationEx\SinemaOtomasyonu\SinemaOtomasyonu\bin\Debug\SinemaOtomasyonu.exe
+D:\BilgeAdamDersler\ApplicationEx\SinemaOtomasyonu\SinemaOtomasyonu\bin\Debug\SinemaOtomasyonu.pdb
+D:\BilgeAdamDersler\ApplicationEx\SinemaOtomasyonu\SinemaOtomasyonu\obj\Debug\SinemaOtomasyonu.csproj.AssemblyReference.cache
+D:\BilgeAdamDersler\ApplicationEx\SinemaOtomasyonu\SinemaOtomasyonu\obj\Debug\SinemaOtomasyonu.Form1.resources
+D:\BilgeAdamDersler\ApplicationEx\SinemaOtomasyonu\SinemaOtomasyonu\obj\Debug\SinemaOtomasyonu.Properties.Resources.resources
+D:\BilgeAdamDersler\ApplicationEx\SinemaOtomasyonu\SinemaOtomasyonu\obj\Debug\SinemaOtomasyonu.csproj.GenerateResource.cache
+D:\BilgeAdamDersler\ApplicationEx\SinemaOtomasyonu\SinemaOtomasyonu\obj\Debug\SinemaOtomasyonu.csproj.CoreCompileInputs.cache
+D:\BilgeAdamDersler\ApplicationEx\SinemaOtomasyonu\SinemaOtomasyonu\obj\Debug\SinemaOtomasyonu.exe
+D:\BilgeAdamDersler\ApplicationEx\SinemaOtomasyonu\SinemaOtomasyonu\obj\Debug\SinemaOtomasyonu.pdb
+D:\BilgeAdamDersler\ApplicationEx\SinemaOtomasyonu\SinemaOtomasyonu\obj\Debug\SinemaOtomasyonu.Rezervasyon.resources

@@ -20,23 +20,13 @@ namespace SelfCoachApp
         public MainForm mainForm { get; set; }
 
         double bodyFat = 0;
-        bool status;
+        
+
 
         private void TDEE_Load(object sender, EventArgs e)
         {
             
         }
-
-        private void rbFamele_CheckedChanged(object sender, EventArgs e)
-        {
-            status = false;
-        }
-
-        private void rbMale_CheckedChanged(object sender, EventArgs e)
-        {
-            status = true;
-        }
-
         private void btnBodyFatCalculate_Click(object sender, EventArgs e)
         {
             
@@ -46,9 +36,9 @@ namespace SelfCoachApp
             string hip = txtHip.Text;
             try
             {
-                bodyFat = CalculateBodyFat(waist, neck, height, status, hip);
+                bodyFat = CalculateBodyFat(waist, neck, height, hip);
 
-                if (bodyFat==0)
+                if (bodyFat<=0)
                 {
                     throw new Exception("Somthing went wrong! Calculate again");
                 }
@@ -62,7 +52,7 @@ namespace SelfCoachApp
                 gbTDEE.Enabled = false;
             }
 
-            string compare = CompareBodyFat(bodyFat, status);
+            string compare = CompareBodyFat(bodyFat);
 
             lblBodyFatFirs.Text = $"Body Fat(%): {(int)bodyFat}";
             lblCompare.Text = compare;
@@ -73,7 +63,7 @@ namespace SelfCoachApp
         }
 
         
-        public double CalculateBodyFat(string waist,string neck,string height,bool rbStatus,string hip)
+        public double CalculateBodyFat(string waist,string neck,string height,string hip)
         {
             double waistValue = Convert.ToDouble(waist);
             double neckValue = Convert.ToDouble(neck);
@@ -81,7 +71,7 @@ namespace SelfCoachApp
             double hipValue = Convert.ToDouble(hip);
             double bfResult = 0;
             
-            if (rbStatus)//For male
+            if (rbMale.Checked)//For male
             {
                 bfResult = (495 / (1.0324 - 0.19077 * (Math.Log10(waistValue - neckValue)) + 0.15456 * (Math.Log10(heightValue)))) - 450;   
             }
@@ -97,14 +87,11 @@ namespace SelfCoachApp
             {
                 return 0;
             }
-            
-           
         }
         
-        
-        public string CompareBodyFat(double bodyFat,bool rbSatatus2)
+        public string CompareBodyFat(double bodyFat)
         {
-            if (rbSatatus2)//For Male
+            if (rbMale.Checked)//For Male
             {
                 if (bodyFat >= 1 && bodyFat <= 5)
                 {
@@ -130,6 +117,7 @@ namespace SelfCoachApp
                 {
                     return "Somthing went wrong!";
                 }
+                
             }
 
             else//For Famale
@@ -165,10 +153,12 @@ namespace SelfCoachApp
         {
             //BMI= Weight (kg) / Height (m)²
             //BMR=370+(9,82*Lean Body Mass
-            string age = txtAge.Text;
-            string weight = txtWeight.Text;
+            double age = Convert.ToDouble(txtAge.Text);
+            double weight = Convert.ToDouble(txtWeight.Text);
+            double height = Convert.ToDouble(txtHeight.Text);
+            
 
-            double BMR=CalculateBMR(bodyFat,weight);
+            double BMR=CalculateBMR(height,weight,age);
 
             switch (comboBox1.SelectedIndex)
             {
@@ -195,11 +185,7 @@ namespace SelfCoachApp
             }
             else if (rbLossWeight.Checked==true)
             {
-                BMR += 500;
-            }
-            else
-            {
-                BMR = BMR;
+                BMR -= 500;
             }
 
             lblCaloriesPerDay.Text =$"Calories Per Day: {(int)BMR}" ;
@@ -209,26 +195,43 @@ namespace SelfCoachApp
 
         }
 
-        public double CalculateBMR(double bodyFat,string weight)
+        public double CalculateBMR(double Height,double weight,double age)//hata var düzelt!!!
         {
-            double weightValue = Convert.ToDouble(weight);
-           
-            double LBM= (1 - bodyFat / 100) * weightValue;
-            double BMR = 370 + (9.82 * LBM);
-
+            double BMR = 0;
             
+            if (rbMale.Checked)
+            {
+                BMR = (10 * weight) + (6.25 * Height) - (5 * age) + 5;
+            }
+            else if (rbFamele.Checked)
+            {
+                BMR = (10 * weight) + (6.25 * Height) + (5 * age) - 161;
+            }
+            else
+            {
+                MessageBox.Show("Select Gender Status!");
+            }
             return BMR;
         }
 
         public string CalculateMacro(double bmr)
         {
             double protein = (bmr * 30 / 100)/4;
-            double fat = (bmr * 30 / 100)/9;
-            double carb = (bmr * 40 / 100)/4;
+            double fat = (bmr * 27 / 100)/9;
+            double carb = (bmr * 43 / 100)/4;
 
             return $"{(int)protein} gr Protein ,{(int)fat} gr Fat, {(int)carb} gr Carb";
         }
 
-       
+        private void btnFast_Click(object sender, EventArgs e)
+        {
+            txtAge.Text = "27";
+            txtHeight.Text = "180";
+            txtNeck.Text = "41";
+            txtWaist.Text = "96";
+            txtWeight.Text = "87";
+            txtHip.Text = "100";
+
+        }
     }
 }

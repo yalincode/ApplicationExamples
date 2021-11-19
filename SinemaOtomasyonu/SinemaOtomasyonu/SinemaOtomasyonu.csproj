@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{3E2B5196-58B5-4D47-B8CD-C782DDC8DDCA}</ProjectGuid>
+    <ProjectGuid>{01C75EE0-1A96-4DDE-ADAE-0583CA691291}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>SelfCoachApp</RootNamespace>
-    <AssemblyName>SelfCoachApp</AssemblyName>
+    <RootNamespace>SinemaOtomasyonu</RootNamespace>
+    <AssemblyName>SinemaOtomasyonu</AssemblyName>
     <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -46,37 +46,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MealPlan.cs">
+    <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MealPlan.Designer.cs">
-      <DependentUpon>MealPlan.cs</DependentUpon>
-    </Compile>
-    <Compile Include="TDEE.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="TDEE.Designer.cs">
-      <DependentUpon>TDEE.cs</DependentUpon>
-    </Compile>
-    <Compile Include="MainForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MainForm.Designer.cs">
-      <DependentUpon>MainForm.cs</DependentUpon>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="WorkoutPlan.cs">
+    <Compile Include="Rezervasyon.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="WorkoutPlan.Designer.cs">
-      <DependentUpon>WorkoutPlan.cs</DependentUpon>
+    <Compile Include="Rezervasyon.Designer.cs">
+      <DependentUpon>Rezervasyon.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="MainForm.resx">
-      <DependentUpon>MainForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MealPlan.resx">
-      <DependentUpon>MealPlan.cs</DependentUpon>
+    <Compile Include="Ziyaretci.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -86,12 +72,10 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="TDEE.resx">
-      <DependentUpon>TDEE.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="WorkoutPlan.resx">
-      <DependentUpon>WorkoutPlan.cs</DependentUpon>
+    <EmbeddedResource Include="Rezervasyon.resx">
+      <DependentUpon>Rezervasyon.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -105,6 +89,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\freeSeat.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dolu.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

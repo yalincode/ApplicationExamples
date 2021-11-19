@@ -17,11 +17,17 @@ namespace SelfCoachApp
             InitializeComponent();
         }
 
-        string[] users = new string[0];
+         List<(string id, string name, string phone)> users = new List<(string id, string name, string phone)>();
+        public (string id, string name, string phone) user;
+
+
         private void btnStart_Click(object sender, EventArgs e)
         {
-            Array.Resize(ref users, users.Length + 1);
-            users[users.Length - 1] = textBox1.Text;
+            string userName = textBox1.Text;
+            string userPhone = txtPhone.Text;
+            string userİd = GenerateId();
+            user = (userİd, userName, userPhone);
+            users.Add(user);
             
             this.Hide();
             var Tdee = new TDEE();
@@ -29,6 +35,22 @@ namespace SelfCoachApp
             Tdee.ShowDialog();
 
             
+        }
+        public string GenerateId()
+        {
+            
+            string id ="";
+            foreach (var user in users)
+            {
+                if (!user.phone.Contains(txtPhone.Text))
+                {
+                    string customerCode = "MN";
+                    id = customerCode + (users.Count + 1).ToString().PadLeft(7, '0');
+                    
+                }
+            }
+
+            return id;
         }
     }
 }
