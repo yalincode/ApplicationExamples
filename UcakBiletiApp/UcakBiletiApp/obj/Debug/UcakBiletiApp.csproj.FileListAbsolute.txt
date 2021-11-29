@@ -1,0 +1,11 @@
+D:\BilgeAdamDersler\ApplicationEx\UcakBiletiApp\UcakBiletiApp\bin\Debug\UcakBiletiApp.exe.config
+D:\BilgeAdamDersler\ApplicationEx\UcakBiletiApp\UcakBiletiApp\bin\Debug\UcakBiletiApp.exe
+D:\BilgeAdamDersler\ApplicationEx\UcakBiletiApp\UcakBiletiApp\bin\Debug\UcakBiletiApp.pdb
+D:\BilgeAdamDersler\ApplicationEx\UcakBiletiApp\UcakBiletiApp\obj\Debug\UcakBiletiApp.csproj.AssemblyReference.cache
+D:\BilgeAdamDersler\ApplicationEx\UcakBiletiApp\UcakBiletiApp\obj\Debug\UcakBiletiApp.Form1.resources
+D:\BilgeAdamDersler\ApplicationEx\UcakBiletiApp\UcakBiletiApp\obj\Debug\UcakBiletiApp.Properties.Resources.resources
+D:\BilgeAdamDersler\ApplicationEx\UcakBiletiApp\UcakBiletiApp\obj\Debug\UcakBiletiApp.csproj.GenerateResource.cache
+D:\BilgeAdamDersler\ApplicationEx\UcakBiletiApp\UcakBiletiApp\obj\Debug\UcakBiletiApp.csproj.CoreCompileInputs.cache
+D:\BilgeAdamDersler\ApplicationEx\UcakBiletiApp\UcakBiletiApp\obj\Debug\UcakBiletiApp.exe
+D:\BilgeAdamDersler\ApplicationEx\UcakBiletiApp\UcakBiletiApp\obj\Debug\UcakBiletiApp.pdb
+D:\BilgeAdamDersler\ApplicationEx\UcakBiletiApp\UcakBiletiApp\obj\Debug\UcakBiletiApp.Rezervasyon.resources

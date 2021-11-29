@@ -1,0 +1,12 @@
+D:\BilgeAdamDersler\ApplicationEx\EticaretWFA\EticaretWFA\bin\Debug\EticaretWFA.exe.config
+D:\BilgeAdamDersler\ApplicationEx\EticaretWFA\EticaretWFA\bin\Debug\EticaretWFA.exe
+D:\BilgeAdamDersler\ApplicationEx\EticaretWFA\EticaretWFA\bin\Debug\EticaretWFA.pdb
+D:\BilgeAdamDersler\ApplicationEx\EticaretWFA\EticaretWFA\obj\Debug\EticaretWFA.csproj.AssemblyReference.cache
+D:\BilgeAdamDersler\ApplicationEx\EticaretWFA\EticaretWFA\obj\Debug\EticaretWFA.MainForm.resources
+D:\BilgeAdamDersler\ApplicationEx\EticaretWFA\EticaretWFA\obj\Debug\EticaretWFA.Properties.Resources.resources
+D:\BilgeAdamDersler\ApplicationEx\EticaretWFA\EticaretWFA\obj\Debug\EticaretWFA.Sepetim.resources
+D:\BilgeAdamDersler\ApplicationEx\EticaretWFA\EticaretWFA\obj\Debug\EticaretWFA.csproj.GenerateResource.cache
+D:\BilgeAdamDersler\ApplicationEx\EticaretWFA\EticaretWFA\obj\Debug\EticaretWFA.csproj.CoreCompileInputs.cache
+D:\BilgeAdamDersler\ApplicationEx\EticaretWFA\EticaretWFA\obj\Debug\EticaretWFA.exe
+D:\BilgeAdamDersler\ApplicationEx\EticaretWFA\EticaretWFA\obj\Debug\EticaretWFA.pdb
+D:\BilgeAdamDersler\ApplicationEx\EticaretWFA\EticaretWFA\obj\Debug\EticaretWFA.KullaniciGirisi.resources
