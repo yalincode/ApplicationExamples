@@ -1,5 +1,6 @@
 ﻿using EticaretWFA.DAL;
 using EticaretWFA.Entities;
+using EticaretWFA.Helper;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -21,24 +22,36 @@ namespace EticaretWFA
 
         private void btnGiris_Click(object sender, EventArgs e)
         {
-            try
+            if (txtAdSoyad.Text=="")
             {
-                PersonRepository personRepository = new PersonRepository();
-                Person person = new Person();
-                person.PersonName = txtAdSoyad.Text;
-                person.PersonPhoneNumber = txtPhone.Text;
-                personRepository.AddPerson(person);
-                MainForm form = new MainForm();
-                form.ShowDialog();
-                this.Hide();
+                Utilities.ShowErrorMessage("Düzgün bir isim girin");
             }
-            catch (Exception ex)
+            else
             {
+                if (txtPhone.MaskCompleted)
+                {
+                    try
+                    {
+                        PersonRepository personRepository = new PersonRepository();
+                        Person person = new Person();
+                        person.PersonName = txtAdSoyad.Text;
+                        person.PersonPhoneNumber = txtPhone.Text;
+                        personRepository.AddPerson(person);
+                        MainForm form = new MainForm();
+                        form.ShowDialog();
+                        this.Hide();
+                    }
+                    catch (Exception ex)
+                    {
+                        Utilities.ShowErrorMessage(ex.Message);
+                    }
 
-                
+                }
+                else
+                {
+                    Utilities.ShowErrorMessage("Düzgün bir telefon numarası girin.");
+                }
             }
-            
-
         }
     }
 }

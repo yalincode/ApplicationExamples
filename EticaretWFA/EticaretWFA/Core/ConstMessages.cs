@@ -12,5 +12,7 @@ namespace EticaretWFA.Core
         public const string RecordDeleteQuestionMessage = "Bu Ürünü silmek istediğinizden emin misiniz.";
         public const string RecordDeleteSuccessMessage = "Silme işlemi başarılı bir şekilde yapıldı.";
         public const string RecordFinishOrderMessage = "Siparişi Tamamlamak İster misiniz?";
+        public const string RecordErrorOrderMessage = "Seçiminiz hatalı tekrar deneyin.";
+        public const string RecordUrunSecimErorMessage = "Lütfen ürün seçimi yapınız.";
     }
 }

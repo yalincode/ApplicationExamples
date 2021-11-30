@@ -76,6 +76,12 @@
     <Compile Include="Sepetim.Designer.cs">
       <DependentUpon>Sepetim.cs</DependentUpon>
     </Compile>
+    <Compile Include="SiparisGecmisi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SiparisGecmisi.Designer.cs">
+      <DependentUpon>SiparisGecmisi.cs</DependentUpon>
+    </Compile>
     <Compile Include="VM\VMGridSepet.cs" />
     <EmbeddedResource Include="KullaniciGirisi.resx">
       <DependentUpon>KullaniciGirisi.cs</DependentUpon>
@@ -95,6 +101,9 @@
     </Compile>
     <EmbeddedResource Include="Sepetim.resx">
       <DependentUpon>Sepetim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SiparisGecmisi.resx">
+      <DependentUpon>SiparisGecmisi.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

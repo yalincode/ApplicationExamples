@@ -18,5 +18,7 @@ namespace EticaretWFA.FakeDb
 
         public static int DetailsId = 0;
         public static List<DetailOrder> Details = new List<DetailOrder>();
+
+        public static List<DetailOrder> HistoryOrder = new List<DetailOrder>();
     }
 }

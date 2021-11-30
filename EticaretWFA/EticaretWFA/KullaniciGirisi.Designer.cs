@@ -31,11 +31,11 @@ namespace EticaretWFA
         {
             this.fsdfsd = new System.Windows.Forms.Label();
             this.txtAdSoyad = new System.Windows.Forms.TextBox();
-            this.txtPhone = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.btnGiris = new System.Windows.Forms.Button();
+            this.txtPhone = new System.Windows.Forms.MaskedTextBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -57,13 +57,6 @@ namespace EticaretWFA
             this.txtAdSoyad.Name = "txtAdSoyad";
             this.txtAdSoyad.Size = new System.Drawing.Size(208, 23);
             this.txtAdSoyad.TabIndex = 1;
-            // 
-            // txtPhone
-            // 
-            this.txtPhone.Location = new System.Drawing.Point(257, 154);
-            this.txtPhone.Name = "txtPhone";
-            this.txtPhone.Size = new System.Drawing.Size(208, 23);
-            this.txtPhone.TabIndex = 3;
             // 
             // label1
             // 
@@ -112,20 +105,28 @@ namespace EticaretWFA
             this.btnGiris.UseVisualStyleBackColor = false;
             this.btnGiris.Click += new System.EventHandler(this.btnGiris_Click);
             // 
+            // txtPhone
+            // 
+            this.txtPhone.Location = new System.Drawing.Point(257, 155);
+            this.txtPhone.Mask = "(999) 000-0000";
+            this.txtPhone.Name = "txtPhone";
+            this.txtPhone.Size = new System.Drawing.Size(208, 23);
+            this.txtPhone.TabIndex = 6;
+            // 
             // KullaniciGirisi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Wheat;
             this.ClientSize = new System.Drawing.Size(629, 272);
+            this.Controls.Add(this.txtPhone);
             this.Controls.Add(this.btnGiris);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.txtPhone);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtAdSoyad);
             this.Controls.Add(this.fsdfsd);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "KullaniciGirisi";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "KullaniciGirisi";
@@ -140,10 +141,10 @@ namespace EticaretWFA
 
         private System.Windows.Forms.Label fsdfsd;
         private System.Windows.Forms.TextBox txtAdSoyad;
-        private System.Windows.Forms.TextBox txtPhone;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnGiris;
+        private System.Windows.Forms.MaskedTextBox txtPhone;
     }
 }

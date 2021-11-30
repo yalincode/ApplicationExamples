@@ -1,6 +1,8 @@
-﻿using EticaretWFA.DAL;
+﻿using EticaretWFA.Core;
+using EticaretWFA.DAL;
 using EticaretWFA.Entities;
 using EticaretWFA.FakeDb;
+using EticaretWFA.Helper;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -70,10 +72,12 @@ namespace EticaretWFA
             if (nudCount.Value>0)
             {
                 UrunEkle(cmbProducts.SelectedIndex, (int)nudCount.Value);
+                Utilities.ShowSuccessMessage(ConstMessages.RecordSuccessMessage);
+                RestartSelection();
             }
             else
             {
-                MessageBox.Show("Test");
+                Utilities.ShowErrorMessage(ConstMessages.RecordErrorOrderMessage);
             }
             
         }
@@ -108,6 +112,7 @@ namespace EticaretWFA
             {
                 Toplam += item.OrderPrice * item.OrderCount;
                 
+                
             }
             return Toplam;
         }
@@ -116,6 +121,26 @@ namespace EticaretWFA
         {
             Sepetim sepet = new Sepetim();
             sepet.ShowDialog();
+        }
+
+        public void RestartSelection()
+        {
+            nudCount.Value = 0;
+            cmbProducts.SelectedIndex = 0;
+        }
+
+        private void btnOrderHistory_Click(object sender, EventArgs e)
+        {
+            if (DataBase.HistoryOrder.Count>0)
+            {
+                SiparisGecmisi form = new SiparisGecmisi();
+                form.ShowDialog();
+            }
+            else
+            {
+                Utilities.ShowErrorMessage("Bir Sipariş geçmişi bulunamadı");
+            }
+            
         }
     }
 }

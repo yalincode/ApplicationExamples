@@ -77,6 +77,7 @@ namespace EticaretWFA
             this.grdSepet.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grdSepet.Size = new System.Drawing.Size(767, 297);
             this.grdSepet.TabIndex = 2;
+            this.grdSepet.DoubleClick += new System.EventHandler(this.grdSepet_DoubleClick);
             // 
             // label1
             // 
@@ -100,6 +101,7 @@ namespace EticaretWFA
             this.btnDelete.TabIndex = 0;
             this.btnDelete.Text = "Seçili Ürünü Sil";
             this.btnDelete.UseVisualStyleBackColor = false;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnProductCountUp
             // 
@@ -112,6 +114,7 @@ namespace EticaretWFA
             this.btnProductCountUp.TabIndex = 1;
             this.btnProductCountUp.Text = "Seçili Ürünü Arttır";
             this.btnProductCountUp.UseVisualStyleBackColor = false;
+            this.btnProductCountUp.Click += new System.EventHandler(this.btnProductCountUp_Click);
             // 
             // btnProductCountDown
             // 
@@ -124,6 +127,7 @@ namespace EticaretWFA
             this.btnProductCountDown.TabIndex = 2;
             this.btnProductCountDown.Text = "Seçili Ürünü Azalt";
             this.btnProductCountDown.UseVisualStyleBackColor = false;
+            this.btnProductCountDown.Click += new System.EventHandler(this.btnProductCountDown_Click);
             // 
             // btnSiparisVer
             // 
@@ -136,6 +140,7 @@ namespace EticaretWFA
             this.btnSiparisVer.TabIndex = 1;
             this.btnSiparisVer.Text = "Sipariş Ver";
             this.btnSiparisVer.UseVisualStyleBackColor = false;
+            this.btnSiparisVer.Click += new System.EventHandler(this.btnSiparisVer_Click);
             // 
             // Sepetim
             // 

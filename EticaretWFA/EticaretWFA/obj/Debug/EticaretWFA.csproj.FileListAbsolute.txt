@@ -10,3 +10,4 @@ D:\BilgeAdamDersler\ApplicationEx\EticaretWFA\EticaretWFA\obj\Debug\EticaretWFA.
 D:\BilgeAdamDersler\ApplicationEx\EticaretWFA\EticaretWFA\obj\Debug\EticaretWFA.exe
 D:\BilgeAdamDersler\ApplicationEx\EticaretWFA\EticaretWFA\obj\Debug\EticaretWFA.pdb
 D:\BilgeAdamDersler\ApplicationEx\EticaretWFA\EticaretWFA\obj\Debug\EticaretWFA.KullaniciGirisi.resources
+D:\BilgeAdamDersler\ApplicationEx\EticaretWFA\EticaretWFA\obj\Debug\EticaretWFA.SiparisGecmisi.resources

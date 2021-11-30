@@ -115,6 +115,7 @@ namespace EticaretWFA
             this.btnOrderHistory.TabIndex = 4;
             this.btnOrderHistory.Text = "Sipariş Geçmişi";
             this.btnOrderHistory.UseVisualStyleBackColor = false;
+            this.btnOrderHistory.Click += new System.EventHandler(this.btnOrderHistory_Click);
             // 
             // button2
             // 
